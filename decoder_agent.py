@@ -26,6 +26,7 @@ Rules:
 - Copy the text into the tool exactly, character for character.
 - If a tool gives an error, try a different tool.
 - If the result is still not readable, decode that result again.
+- If all tools give errors, reply: "I cannot decode this text."
 - When it is readable, stop and reply: Decoded: <the text>"""
 
 
