@@ -49,6 +49,15 @@ def decode_rot13(text: str) -> str:
 
 TOOLS = {"decode_base64": decode_base64, "decode_hex": decode_hex, "decode_rot13": decode_rot13}
 
+# TEST ZONE: try each function on its own, no AI needed.
+# Set TESTING = False when you are ready to run the agent.
+TESTING = False
+if TESTING:
+    print(decode_base64("aGVsbG8gY3liZXIgY2x1Yg=="))          # expect: hello cyber club
+    print(decode_hex("6167656e74732075736520746f6f6c73"))     # expect: agents use tools
+    print(decode_rot13("gur ybbc vf gur ntrag"))              # expect: the loop is the agent
+    exit()
+
 while True:
     puzzle = input("\npuzzle> ")
     if puzzle == "quit":
